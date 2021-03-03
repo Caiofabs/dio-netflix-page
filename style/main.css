@@ -1,0 +1,119 @@
+/* GLOBAL ----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --black: #141414;
+    --red: #e50914;
+    --gray: #aaa;
+    --green: #5bc236;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    background: black;
+    color: #fff;
+}
+a {
+    text-decoration: none;
+    color: var(--gray);
+}
+/* HEADER -------- */
+header {
+    background: var(--black);
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .logo {
+    font-family: 'Arial Black' ;
+    color: var(--red);
+    font-size: 3.5em;
+    margin-left: 20px;
+}
+.container nav a {
+    margin-right: 50px;
+    font-size: .85em;
+}
+.container nav a:hover {
+    color: #fff;
+}
+/* MAIN ----------- */
+.main-movie {
+    height: 600px;
+    background: url(/img/the-witcher.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+.main-movie .container2 {
+    width: 45%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,.1),
+     rgba(0,0,0,0.8));
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    padding-left: 1%;
+}
+.main-movie .container2 .title {
+    font-size: 2.2em;
+    margin-bottom: 25px;
+}
+.main-movie .container2 .infos{
+    font-weight: bold;
+    margin-top: -30px;
+}
+.main-movie .container2 .infos span {
+    margin-right: 20px;
+    color: var(--green);
+}
+.main-movie .container2 p {
+    margin-bottom: 30px;
+    color: var(--gray);
+}
+.buttons .btn {
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+.buttons .btn:nth-child(1) {
+    background: var(--red);
+    border: none;
+}
+.buttons .btn:nth-child(2) {
+    background: rgba(48, 46, 46, 0.2);
+    border: 1px solid darkgray;
+    position: relative;
+}
+.buttons .btn:nth-child(2):hover {
+    background: rgba(48, 46, 46, 0.5);
+}
+.buttons p {
+    margin-top: 25px;
+    font-size: .8em;
+}
+.buttons p span {
+    font-weight: bold;
+}
+.buttons p a:hover {
+    color: #fff;
+}
+.scroll-title {
+    margin:15px 0px 10px 15px;
+}
+/* CAROUSEL & SWITCHS */
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
